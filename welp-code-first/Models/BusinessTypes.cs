@@ -9,5 +9,7 @@ namespace welp_code_first.Models
     {
         public virtual Businesses BusinessTypeID { get; set; }
         public string BusinessTypeName { get; set; }
+
+        public virtual ICollection<Businesses> Business { get; set; }
     }
 }
